@@ -35,3 +35,12 @@ El Zen de Python se compone por los principios para escribir tu código de maner
   Si somos capaces de explicar nuestra implementación a otros desarrolladores paso a paso, es una buena idea. En cambio si no podemos hacerlo, significa que ni nosotros entendemos la implementación y deberíamos repensar nuestra forma de encarar la solución.
 - **Los espacios de nombres son una gran idea, ¡Tengamos más de esos! (namespaces)**:
   Es el nombre que se ha indicado luego de la palabra import, es decir la ruta (namespace) del módulo. (Lo veremos a profundidad más adelante).
+
+## ¿Qué es la documentación?
+
+**La documentación es la biblia de cualquier programador.**
+
+No puedes aspirar a aprender un lenguaje si no lees documentación. Sé que muchas personas se saltan eso porque piensan “ufff, es mucho texto, se ve feo”, etc. Pero es la documentación quien nos va a decir exactamente cómo funciona el lenguaje (y cualquier tecnología). No hay un solo desarrollador profesional que no lea documentación.
+
+Docmentacion de python : https://docs.python.org/3/
+
