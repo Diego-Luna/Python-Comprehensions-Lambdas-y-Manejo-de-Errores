@@ -44,3 +44,6 @@ No puedes aspirar a aprender un lenguaje si no lees documentación. Sé que much
 
 Docmentacion de python : https://docs.python.org/3/
 
+## ¿Qué es un entorno virtual?
+
+Los entornos virtuales son de mucha utilidad ya que nos ayudan a tener versiones especificas de librerías o módulos a un proyecto sin afectar a otros. De esta forma en el mismo equipo pueden coexistir distintos proyectos con distintas versiones de la misma librería o modulo.
