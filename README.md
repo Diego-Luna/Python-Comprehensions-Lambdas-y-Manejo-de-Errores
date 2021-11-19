@@ -47,3 +47,59 @@ Docmentacion de python : https://docs.python.org/3/
 ## ¿Qué es un entorno virtual?
 
 Los entornos virtuales son de mucha utilidad ya que nos ayudan a tener versiones especificas de librerías o módulos a un proyecto sin afectar a otros. De esta forma en el mismo equipo pueden coexistir distintos proyectos con distintas versiones de la misma librería o modulo.
+
+## Creando un ambiente virtual con VENV
+
+1. Creación de ambiente Virtual:
+
+```
+python3 -m venv nombre_venv
+
+```
+
+- Usualmente el nombre del ambiente virtual es venv.
+
+2. Activación del ambiente virtual:
+
+- Windows:
+
+```
+.\venv\Scripts\activate
+```
+
+- Unix o MacOS:
+
+```
+source venv/bin/activate
+```
+
+3. Desactivar el ambiente virtual:
+
+```
+deactivate
+```
+
+- Crear un alias en linux/mac:
+
+```
+alias nombre-alias="comando"
+alias avenv="source venv/bin/activate"
+```
+
+**Para que el alias sea permanente**
+
+Para los de mac
+MacOS Catalina y superior
+Apple cambió su shell predeterminado a zsh , por lo que los archivos de configuración incluyen ~/.zshenvy ~/.zshrc. Esto es como ~/.bashrc, pero para zsh. Simplemente edite el archivo y agregue lo que necesite; debe obtenerse cada vez que abra una nueva ventana de terminal:
+
+```
+nano ~/.zshenv
+```
+
+```
+alias py=python
+```
+Luego haga ctrl + x, y, luego ingrese para guardar.
+
+Este archivo parece ejecutarse sin importar qué (inicio de sesión, no inicio de sesión o script), por lo que parece mejor que el ~/.zshrcarchivo.
+
