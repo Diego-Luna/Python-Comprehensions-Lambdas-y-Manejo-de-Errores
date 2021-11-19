@@ -101,5 +101,5 @@ alias py=python
 ```
 Luego haga ctrl + x, y, luego ingrese para guardar.
 
-Este archivo parece ejecutarse sin importar qué (inicio de sesión, no inicio de sesión o script), por lo que parece mejor que el ~/.zshrcarchivo.
+Este archivo parece ejecutarse sin importar qué (inicio de sesión, no inicio de sesión o script), por lo que parece mejor que el `~/.zshrc` archivo.
 
