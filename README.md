@@ -141,3 +141,14 @@ True
 1. argumento o parametro que recibe la función para poder acompañado de la palabra clave lambda
 2. expresión con linea de código
 3. variable con identificador, ojo no es de la función, sino de la variable que va a contener un objeto de tipo función que retorna toda la función de python
+
+## High order functions: filter, map y reduce
+
+La diferencia entre filter y map:
+
+- **filter** devuelve True or False según el valor esté dentro de los criterios buscados o no. En caso de que no cumpla con la condición, no será devuelto y la lista se verá reducida por este filtro.
+- **Map** funciona muy parecido, pero su diferencia radica en que no puede eliminar valores de la lista del array entregado. Es decir, el output tiene la misma cantidad de valores que el input.
+
+Cómo funciona reduce:
+
+- **Reduce** toma 2 valores entregados como parámetros y el iterador como otro parámetro. Realiza la función con estos 2 valores, y luego con el resultado de esto y el valor que le sigue en el array. Y así hasta pasar por todos los valores de la lista.
