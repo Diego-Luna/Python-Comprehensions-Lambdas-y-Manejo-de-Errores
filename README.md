@@ -99,6 +99,7 @@ nano ~/.zshenv
 ```
 alias py=python
 ```
+
 Luego haga ctrl + x, y, luego ingrese para guardar.
 
 Este archivo parece ejecutarse sin importar qué (inicio de sesión, no inicio de sesión o script), por lo que parece mejor que el `~/.zshrc` archivo.
@@ -112,3 +113,31 @@ Es importante recordar que esto se debe correr con el entorno virtual activado (
 Algo importante, si estás manejando git, es bueno siempre ignorar la carpeta `venv`, esto porque realmente no nos importa subir todo eso al repositorio, puedes mirarlo como que `venv` es el `node_modules` de JavaScript, a fin de cuentas, cualquier otro programador que trabaje con nuestro código creará su propio entorno virtual e instalará las dependencias que dejamos en nuestro `requeriments.txt`.
 .
 Y un dato curioso es que, el operador `>` en la terminal es algo especial de UNIX, ya que este operador lo que hace es redirigir la salida de cualquier comando hacia donde lo mandes, por defecto la salida es en la terminal, pero al usar `>` le dijimos a la terminal que, en lugar de que la salida sea en la terminal, que se redirija al archivo `requeriments.txt` 👀. Si quieren jugar con ello, pueden hacerlo con este ejemplo: `ls -al > test.txt`, eso creará un archivo llamado `test.txt`, y si lo abren verán cómo es que ese comando funciona 😄
+
+## Conceptos avanzados de funciones
+
+Una función es simplemente código que escribimos una vez y aplicamos después en diferentes lugares donde estemos trabajando.
+
+### funciones anónimas: Lambda
+
+Lambda son las funciones anónimas que contienen una sola expresión, es decir: funciones sin identificación, sin nombre:
+
+```python
+lambda argumento:expresión
+```
+
+- tenemos la palabra clave lambda
+- un argumento seguido de una expresión donde se colocan los argumentos
+
+En vez de usar **def** usamos **lambda**. Estas últimas pueden tener el argumento que nosotros necesitemos, pero una sola línea de expresión.
+
+```python
+palindrome = lambda string: string === string[::-1]
+print(palindrome("ana"))
+#output
+True
+```
+
+1. argumento o parametro que recibe la función para poder acompañado de la palabra clave lambda
+2. expresión con linea de código
+3. variable con identificador, ojo no es de la función, sino de la variable que va a contener un objeto de tipo función que retorna toda la función de python
