@@ -170,3 +170,21 @@ Cuando python nos avisa que tenemos un error en el código nos avienta un mensaj
 ### Elevar una excepción
 
 - Cuando tenemos una excepción en python lo que sucede es que se crea un objeto de tipo exception que se va moviendo a través de los bloques de código hasta llegar al bloque principal si es que no se maneja dicha excepción en algún bloque intermedio el programa se interrumpe y genera el traceback
+
+## Debugging:
+
+O depuración es una herramienta que traen varios editores de código con el objetivo de solucionar nuestros errores de lógica. Revisemos la herramienta debugging de VSCode
+
+En este entorno podemos acceder a funcionalidades como:
+* pause → permite pausar la ejecución del programa
+* step over → permite avanazr un solo paso en el programa
+* step in → igresamos a un bloque secundario del programa (funciones)
+* step out → salimos del bloque secundario
+* restart → reinicia el programa
+* stop → detiene el programa
+
+Además podemos generar breakpoints, que son puntos en los que el programa se detendrá para ayudarnos a depurar el código
+
+**Nota:**
+
+Existen herramientas de debugging propias de python como el módulo pdb o los breakpoints (a partir de python 3.7)
