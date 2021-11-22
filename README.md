@@ -176,15 +176,51 @@ Cuando python nos avisa que tenemos un error en el código nos avienta un mensaj
 O depuración es una herramienta que traen varios editores de código con el objetivo de solucionar nuestros errores de lógica. Revisemos la herramienta debugging de VSCode
 
 En este entorno podemos acceder a funcionalidades como:
-* pause → permite pausar la ejecución del programa
-* step over → permite avanazr un solo paso en el programa
-* step in → igresamos a un bloque secundario del programa (funciones)
-* step out → salimos del bloque secundario
-* restart → reinicia el programa
-* stop → detiene el programa
+
+- pause → permite pausar la ejecución del programa
+- step over → permite avanazr un solo paso en el programa
+- step in → igresamos a un bloque secundario del programa (funciones)
+- step out → salimos del bloque secundario
+- restart → reinicia el programa
+- stop → detiene el programa
 
 Además podemos generar breakpoints, que son puntos en los que el programa se detendrá para ayudarnos a depurar el código
 
 **Nota:**
 
 Existen herramientas de debugging propias de python como el módulo pdb o los breakpoints (a partir de python 3.7)
+
+## Manejo de excepciones
+
+Algo que aparece casi al final de la lectura recomendada en el documentación de Python es que se puede agregar un “else” al try-except.
+
+- **TRY**: En el try se coloca código que esperamos que pueda lanzar algún error.
+- **EXCEPT**: En el except se maneja el error, es decir, si ocurre un error dentro del bloque de código del try, se deja de ejecutar el código del try y se ejecuta lo que se haya definido en el Except.
+- **ELSE**: El else se ejecuta sólo si no hubo ninguna excepción lanzada desde el try
+- **FINALLY**: Se ejecuta SIEMPRE, haya sido lanzada la excepción o no haya sido lanzada.
+
+```python
+try:
+    pass #Código a evaluar
+except:
+    pass #Si ocurre un error, llegará a esta parte
+```
+
+Ejemplo con try, raise, except:
+
+```python
+def palindrome(string):
+    try:
+        if len(string) == 0:
+            raise ValueError("No se pueden ingresar cadenas vacías")
+        return string == string[::-1]
+    except ValueError as ve:
+        print(ve)
+        return False
+
+
+try:
+    print(palindrome(""))
+except TypeError:
+    print("Solo se pueden ingresar strings")
+```
