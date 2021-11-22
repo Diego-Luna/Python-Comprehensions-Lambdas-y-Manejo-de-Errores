@@ -224,3 +224,17 @@ try:
 except TypeError:
     print("Solo se pueden ingresar strings")
 ```
+
+## Assert statements
+
+Es una manera poco usual de manejar los errores en python
+
+Evalúa una condicional, si esta se cumple continuamos con el flujo normal del python, si no se cumple eleva un error del tipo AssertionError y nos muestra un mensaje.
+
+Su sintaxis es:
+
+```python
+assert <condicion>, <"mensaje">
+<código>
+
+```
